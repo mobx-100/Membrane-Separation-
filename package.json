@@ -1,0 +1,26 @@
+{
+  "name": "membrane-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite --host 127.0.0.1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "npm run test:stage2 && npm run test:python",
+    "test:stage2": "node --test tests/javascript/stage2.test.js",
+    "test:python": "python -m unittest discover -s tests/python -p 'test_*.py'",
+    "test:multistage": "python -m pytest -v tests/python/test_multistage.py",
+    "train:model": "python -m backend.train_model",
+    "api": "uvicorn main:app --host 127.0.0.1 --port 8000 --reload",
+    "validate:literature": "python validate_literature.py"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^3.10.1",
+    "vite": "^7.0.0"
+  }
+}
