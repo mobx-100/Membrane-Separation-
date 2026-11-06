@@ -369,7 +369,7 @@ export default function StageTwo({ prediction, design, setDesign, result, setRes
                   </div>
                   <PerformanceGraph data={graphs.area_sweep} targetRecovery={targetRecovery} />
                 </article>
-                <article className="panel process-detail">
+                {/* <article className="panel process-detail">
                   <div className="panel-heading">
                     <div><h3>Vacuum pressure vs. area</h3><p>Area required for 90% CO₂ recovery.</p></div>
                   </div>
@@ -377,7 +377,7 @@ export default function StageTwo({ prediction, design, setDesign, result, setRes
                     data={pressureData}
                     currentPressure={design.permeatePressureBar}
                   />
-                </article>
+                </article> */}
               </div>
               <p className="stage-two-caveat">
                 Captured product: {format(result.product_co2_flow, 3)} kmol/h CO₂ in{" "}
