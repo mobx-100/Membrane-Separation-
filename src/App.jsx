@@ -164,8 +164,6 @@ const NOTEBOOK_GRAPHS = [
   { title: "Learning curve", file: "learning-curve.png", description: "Random Forest permeability training and validation scores by training-set size." },
   { title: "Robeson plot", file: "robeson-plot.png", description: "CO₂ permeability vs. CO₂/N₂ selectivity with Robeson upper-bound references." },
   { title: "Permutation feature importance", file: "feature-importance.png", description: "Top 20 features ranked by permutation importance for the permeability model." },
-  { title: "Random Forest SHAP summary", file: "shap-random-forest.png", description: "Notebook SHAP feature summary for the Random Forest model." },
-  { title: "XGBoost SHAP summary", file: "shap-xgboost.png", description: "Notebook SHAP feature summary for the XGBoost model." },
   { title: "Notebook Stage 2 thickness trade-off", file: "stage2-thickness-tradeoff.png", description: "Saved notebook figure comparing membrane area and energy across layer thicknesses." },
 ];
 
